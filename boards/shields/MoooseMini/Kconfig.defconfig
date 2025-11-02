@@ -3,5 +3,27 @@ if SHIELD_MoooseMini
 config ZMK_KEYBOARD_NAME
     default "MoooseMini"
 
+config ZMK_USB
+	default y
+
+config ZMK_BLE
+	default y
+
+config ZMK_MOUSE
+	default y
+
+config ZMK_POINTING
+	default y
+
+config SPI
+	default y
+
+config INPUT
+	default y
+
+config NFCT_PINS_AS_GPIOS
+	default y
+
 endif
+
 
