@@ -1,0 +1,52 @@
+layout: {zmk_keyboard: MoooseMini}
+layers:
+  default:
+  - MUTE
+  - {t: '&to_layer_0 ESC', h: '1'}
+  - '&mkp LCLK'
+  - '&mkp RCLK'
+  - {t: '&to_layer_0 ENTER', h: '2'}
+  - '&mkp MCLK'
+  - BACKSPACE
+  - {t: '&to_layer_0 SPACE', h: '3'}
+  - {t: '&to_layer_0 ESC', h: '4'}
+  '1':
+  - '1'
+  - {t: ESC, type: held}
+  - Ctl+Sft+TAB
+  - Ctl+T
+  - ENTER
+  - Ctl+W
+  - Ctl+TAB
+  - SPACE
+  - ''
+  '2':
+  - '2'
+  - ESC
+  - LEFT
+  - UP
+  - {t: ENTER, type: held}
+  - DOWN
+  - RIGHT
+  - SPACE
+  - ''
+  '3':
+  - '3'
+  - ESC
+  - Gui+LEFT
+  - Gui+UP
+  - ENTER
+  - Gui+DOWN
+  - Gui+RIGHT
+  - {t: SPACE, type: held}
+  - ''
+  '4':
+  - '&bootloader'
+  - {t: BT, h: '1'}
+  - BT CLR ALL
+  - {t: BT, h: '4'}
+  - {t: BT, h: '2'}
+  - BT CLR
+  - {t: BT, h: '5'}
+  - {t: BT, h: '3'}
+  - {type: held}
