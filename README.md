@@ -2,7 +2,7 @@ user-config形式で使用することも目的としてフォークしたリポ
 
 # MoooseMini
 55mm大玉搭載の自作マウス"MoooseMini"のZMK-Configリポジトリです。  
-![](Readme_image/MoooseMini01.png)
+![](README_image/MoooseMini01.png)
 <br>
 
 ## 特徴
