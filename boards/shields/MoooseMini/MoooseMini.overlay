@@ -4,14 +4,6 @@
 
 &xiao_serial { status = "disabled"; };
 
-&kscan0 {
-        col-gpios
-            = <&xiao_d 7 GPIO_ACTIVE_HIGH> //Col0
-            , <&xiao_d 8 GPIO_ACTIVE_HIGH> //Col1
-            , <&xiao_d 9 GPIO_ACTIVE_HIGH> //Col2
-            ;
-};
-
 &right_encoder {
     status = "okay";
 };
@@ -81,5 +73,6 @@
         disable-burst-read;
     };
 };
+
 
 
