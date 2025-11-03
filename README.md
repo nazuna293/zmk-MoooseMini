@@ -1,10 +1,9 @@
 user-config形式で使用することも目的としてフォークしたリポジトリを一部変更しています。
 
-![](keymap-drawer/MoooseMini.svg)
-
 # MoooseMini
 55mm大玉搭載の自作マウス"MoooseMini"のZMK-Configリポジトリです。  
 ![](./Readme_image/MoooseMini01.png)
+<br>
 
 ## 特徴
 ・ZMK Firmware採用で有線/無線可能  
@@ -17,6 +16,8 @@ user-config形式で使用することも目的としてフォークしたリポ
 [プロジェクトページ](https://github.com/ataruno/MoooseMini/tree/main)  
 [ビルドガイド](https://github.com/ataruno/MoooseMini/blob/main/doc/build_guide.md)  
 [ZMK-Configリポジトリ](https://github.com/ataruno/zmk-MoooseMini)  
+
+![](keymap-drawer/MoooseMini.svg)
 
 ### FIRMWARE  
 Special thanks to the people behind the ZMK project:  
