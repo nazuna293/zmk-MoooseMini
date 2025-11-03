@@ -1,4 +1,4 @@
-user-config形式で使用することも目的としてフォークしたリポジトリを一部変更しています。
+user-config形式で使用することも目的としてフォークしたリポジトリを一部変更しています。nazuna293
 
 # MoooseMini
 55mm大玉搭載の自作マウス"MoooseMini"のZMK-Configリポジトリです。  
