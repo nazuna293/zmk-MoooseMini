@@ -52,9 +52,15 @@
 #define JP_QMARK LS(JP_SLASH) // ?
 #define JP_UNDER LS(JP_BSLH)  // _
 
+
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
+};
+
+&trackball {
+    cpi = <600>;
+    swap-xy;
 };
 
 / {
