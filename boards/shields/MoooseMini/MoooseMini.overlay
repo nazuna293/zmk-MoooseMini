@@ -1,5 +1,4 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
-#include <input/processors.dtsi>
 #include "MoooseMini.dtsi"
 
 /{
@@ -7,6 +6,7 @@
         zmk,physical-layout = &MoooseMini_physical_layout;
     };
 
+    #include <input/processors.dtsi>
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
