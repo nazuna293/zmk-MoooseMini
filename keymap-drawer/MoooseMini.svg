@@ -1,4 +1,4 @@
-<svg width="284" height="1386" viewBox="0 0 284 1386" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="340" height="1386" viewBox="0 0 340 1386" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <style>/* inherit to force styles through use tags */
 svg path {
     fill: inherit;
@@ -131,7 +131,7 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">MUTE</text>
 </g>
-<g transform="translate(196, 28)" class="key keypos-1">
+<g transform="translate(252, 28)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
 <tspan x="0" dy="-1.2em" style="font-size: 64%">&amp;to_layer_0</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">ESC</tspan>
@@ -151,7 +151,7 @@ path.combo {
 <tspan x="0" dy="-0.6em">&amp;mkp</tspan><tspan x="0" dy="1.2em">RCLK</tspan>
 </text>
 </g>
-<g transform="translate(196, 84)" class="key keypos-4">
+<g transform="translate(224, 84)" class="key keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
 <tspan x="0" dy="-1.2em" style="font-size: 64%">&amp;to_layer_0</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">ENTER</tspan>
@@ -195,7 +195,7 @@ path.combo {
 <a href="#x_x">
 <text x="0" y="0" class="key tap layer-activator">1</text>
 </a></g>
-<g transform="translate(196, 28)" class="key held keypos-1">
+<g transform="translate(252, 28)" class="key held keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 <text x="0" y="0" class="key held tap">ESC</text>
 </g>
@@ -209,7 +209,7 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Ctl+T</text>
 </g>
-<g transform="translate(196, 84)" class="key keypos-4">
+<g transform="translate(224, 84)" class="key keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">ENTER</text>
 </g>
@@ -238,7 +238,7 @@ path.combo {
 <a href="#x_x">
 <text x="0" y="0" class="key tap layer-activator">2</text>
 </a></g>
-<g transform="translate(196, 28)" class="key keypos-1">
+<g transform="translate(252, 28)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">ESC</text>
 </g>
@@ -250,7 +250,7 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">UP</text>
 </g>
-<g transform="translate(196, 84)" class="key held keypos-4">
+<g transform="translate(224, 84)" class="key held keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 <text x="0" y="0" class="key held tap">ENTER</text>
 </g>
@@ -279,7 +279,7 @@ path.combo {
 <a href="#x_x">
 <text x="0" y="0" class="key tap layer-activator">3</text>
 </a></g>
-<g transform="translate(196, 28)" class="key keypos-1">
+<g transform="translate(252, 28)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">ESC</text>
 </g>
@@ -293,7 +293,7 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Gui+UP</text>
 </g>
-<g transform="translate(196, 84)" class="key keypos-4">
+<g transform="translate(224, 84)" class="key keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">ENTER</text>
 </g>
@@ -325,7 +325,7 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;bootloader</tspan></text>
 </g>
-<g transform="translate(196, 28)" class="key keypos-1">
+<g transform="translate(252, 28)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">BT</text>
 <a href="#x_x">
@@ -343,7 +343,7 @@ path.combo {
 <a href="#x_x">
 <text x="0" y="24" class="key hold layer-activator">4</text>
 </a></g>
-<g transform="translate(196, 84)" class="key keypos-4">
+<g transform="translate(224, 84)" class="key keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">BT</text>
 <a href="#x_x">
