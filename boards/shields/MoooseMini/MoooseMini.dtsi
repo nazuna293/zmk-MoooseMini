@@ -9,15 +9,7 @@
 #define LOWER 3
 #define TACT 4
 
-&gpio0 {
-    status = "okay";
-};
-
 / {
-    chosen {
-        zmk,physical-layout = &MoooseMini_physical_layout;
-    };
-
     MoooseMini_physical_layout: MoooseMini_physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "Default";
@@ -32,29 +24,6 @@
                <&key_physical_attrs 100 100  100  200       0     0     0>,
                <&key_physical_attrs 100 100  300  200       0     0     0>,
                <&key_physical_attrs  70  70  265  315       0     0     0>;
-    };
-
-    trackball_listener: trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-
-        snipe_1 {
-            layers = <UPPER>;
-            input-processors = <&zip_xy_scaler 1 3>;
-        };
-        snipe_2 {
-            layers = <TACT>;
-            input-processors = <&zip_xy_scaler 1 3>;
-        };
-        scroller_1 {
-            layers = <LOWER>;
-            input-processors = <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,  <&zip_xy_scaler 1 30 >, <&zip_xy_to_scroll_mapper>;
-        };
-        scroller_2 {
-            layers = <MID>;
-            input-processors = <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,  <&zip_xy_scaler 1 30 >, <&zip_xy_to_scroll_mapper>;
-        };
-
     };
 
     default_transform: keymap_transform_0 {
@@ -99,3 +68,22 @@
 
 &xiao_i2c { status = "disabled"; };
 &xiao_serial { status = "disabled"; };
+
+&pinctrl {
+    spi0_default: spi0_default {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 0, 5)>,
+                <NRF_PSEL(SPIM_MOSI, 0, 4)>,
+                <NRF_PSEL(SPIM_MISO, 0, 4)>;
+        };
+    };
+
+    spi0_sleep: spi0_sleep {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 0, 5)>,
+                <NRF_PSEL(SPIM_MOSI, 0, 4)>,
+                <NRF_PSEL(SPIM_MISO, 0, 4)>;
+            low-power-enable;
+        };
+    };
+};
