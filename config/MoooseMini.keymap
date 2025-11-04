@@ -67,7 +67,6 @@
 
 &trackball {
     cpi = <600>;
-    swap-xy;
 };
 
 &trackball_listener {
