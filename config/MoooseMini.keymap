@@ -65,7 +65,7 @@
     quick-tap-ms = <0>;
 };
 
-&trackball { 
+&trackball {
     cpi = <600>;
     swap-xy;
 };
@@ -175,10 +175,10 @@
 
         default_layer {
             bindings = <
-&kp C_MUTE            &lt_to_layer_0 1 ESC
-&mkp MB1              &mkp MB2              &lt_to_layer_0 2 ENTER
-&mkp MB3              &kp BACKSPACE         &lt_to_layer_0 3 SPACE
-&lt_to_layer_0 4 ESC
+&kp C_MUTE                 &lt_to_layer_0 1 ESC
+&lt 2 BACKSPACE  &mkp MB3  &lt_to_layer_0 2 ENTER
+&mkp MB1         &mkp MB2  &lt_to_layer_0 3 SPACE
+                           &lt_to_layer_0 4 ESC
             >;
 
             sensor-bindings = <&mouse_scroll SCRL_DOWN SCRL_UP>;
@@ -186,10 +186,10 @@
 
         UPPER {
             bindings = <
-&kp 1            &kp ESC
+&kp 1                         &kp ESC
 &kp LC(LS(TAB))  &kp LC(T)    &kp ENTER
 &kp LC(W)        &kp LC(TAB)  &kp SPACE
-&none
+                              &none
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LS(TAB)) LC(TAB)>;
@@ -197,10 +197,10 @@
 
         MID {
             bindings = <
-&kp 2     &kp ESC
+&kp 2                &kp ESC
 &kp LEFT  &kp UP     &kp ENTER
 &kp DOWN  &kp RIGHT  &kp SPACE
-&none
+                     &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -208,10 +208,10 @@
 
         LOWER {
             bindings = <
-&kp 3         &kp ESC
+&kp 3                        &kp ESC
 &kp LG(LEFT)  &kp LG(UP)     &kp ENTER
 &kp LG(DOWN)  &kp LG(RIGHT)  &kp SPACE
-&none
+                             &none
             >;
 
             sensor-bindings = <&mouse_scroll SCRL_LEFT SCRL_RIGHT>;
@@ -219,10 +219,10 @@
 
         TACT {
             bindings = <
-&bootloader     &bt BT_SEL 1
+&bootloader                   &bt BT_SEL 1
 &bt BT_CLR_ALL  &bt BT_SEL 4  &bt BT_SEL 2
 &bt BT_CLR      &bt BT_SEL 5  &bt BT_SEL 3
-&none
+                              &none
             >;
 
             sensor-bindings = <&mouse_scroll SCRL_DOWN SCRL_UP>;
