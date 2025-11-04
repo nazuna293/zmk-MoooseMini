@@ -2,11 +2,6 @@
 #include <dt-bindings/zmk/input_transform.h>
 #include <physical_layouts.dtsi>
 
-#define UPPER 1
-#define MID 2
-#define LOWER 3
-#define TACT 4
-
 &gpio0 {
     status = "okay";
 };
