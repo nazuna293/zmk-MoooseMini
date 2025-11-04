@@ -65,7 +65,10 @@
     quick-tap-ms = <0>;
 };
 
-&trackball { cpi = <600>; };
+&trackball { 
+    cpi = <600>;
+    swap-xy;
+};
 
 &trackball_listener {
     snipe_1 {
