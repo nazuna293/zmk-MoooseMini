@@ -26,35 +26,31 @@
 };
 
 &trackball {
-    cpi = <800>;
+    cpi = <700>;
     swap-xy;
 };
 
 &trackball_listener {
-    snipe_1 {
-        layers = <UPPER>;
-        input-processors = <&zip_xy_scaler 1 3>;
-    };
+    // mouse-gesture
+    input-processors = <
+        &zip_mouse_gesture
+    >;
 
-    snipe_2 {
-        layers = <TACT>;
-        input-processors = <&zip_xy_scaler 1 3>;
-    };
+    // snipe
+    sniper {
+        layer = <1>;
+        input-processors = <
+          &zip_xy_scaler 1 2
+        >;
+    // scroll-snap
+    scroller {
+        layers = <2>;
+        input-processors = <
+          &zip_xy_to_scroll_mapper
+          &zip_scroll_snap
+        >;
 
-    scroller_1 {
-        layers = <LOWER>;
-        input-processors =
-            <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            <&zip_xy_scaler 1 30 >,
-            <&zip_xy_to_scroll_mapper>;
-    };
-
-    scroller_2 {
-        layers = <MID>;
-        input-processors =
-            <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            <&zip_xy_scaler 1 30 >,
-            <&zip_xy_to_scroll_mapper>;
+        process-next;
     };
 };
 
@@ -86,6 +82,17 @@
 };
 
 / {
+    // zmk-listeners
+
+    layer_listeners {
+        compatible = "zmk,layer-listeners";
+
+        release_alt {
+            layers = <2>;
+            bindings = <&kt_on LEFT_ALT &kt_off LEFT_ALT>;
+        };
+    };
+
     macros {
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
@@ -110,6 +117,37 @@
             compatible = "zmk,behavior-layout-shift-key-press";
             #binding-cells = <1>;
             label = "LAYOUT_SHIFT_KEY_PRESS";
+        };
+
+        // zmk-listeners
+
+        kt_on: key_toggle_on_only {
+            compatible = "zmk,behavior-key-toggle";
+            #binding-cells = <1>;
+            display-name = "Key Toggle On";
+            toggle-mode = "on";
+        };
+
+        // zmk-listeners
+
+        kt_off: key_toggle_off_only {
+            compatible = "zmk,behavior-key-toggle";
+            #binding-cells = <1>;
+            display-name = "Key Toggle Off";
+            toggle-mode = "off";
+        };
+
+        // zmk-listeners
+
+        lt_to_0: lt_to_0 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_to_0";
+            bindings = <&mo_to_0>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            flavor = "balanced";
         };
 
         lt_to_layer_0: lt_to_layer_0 {
