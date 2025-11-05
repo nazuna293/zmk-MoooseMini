@@ -37,7 +37,7 @@
     >;
 
     // snipe
-    sniper {
+    snipe {
         layer = <1>;
         input-processors = <
           &zip_xy_scaler 1 2
