@@ -127,6 +127,12 @@
 
             label = "MO_to_0";
         };
+    gesture: gesture {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        label = "GESTURE";
+        bindings = <&zip_mouse_gesture>;
+    };
     };
 
     behaviors {
