@@ -2,15 +2,15 @@ layout: {zmk_keyboard: MoooseMini}
 layers:
   default:
   - MUTE
-  - {t: '&to_layer_0 ESC', h: '1'}
-  - {t: BACKSPACE, h: '2'}
-  - '&mkp MB3'
-  - {t: '&to_layer_0 ENTER', h: '2'}
+  - {t: '&to_layer_0 ESC', h: UPPER}
   - '&mkp MB1'
   - '&mkp MB2'
-  - {t: '&to_layer_0 SPACE', h: '3'}
-  - {t: '&to_layer_0 ESC', h: '4'}
-  '1':
+  - {t: '&to_layer_0 ENTER', h: MID}
+  - {t: BACKSPACE, h: MID}
+  - '&mkp MB3'
+  - {t: '&to_layer_0 SPACE', h: LOWER}
+  - {t: '&to_layer_0 ESC', h: TACT}
+  UPPER:
   - '1'
   - {t: ESC, type: held}
   - Ctl+Sft+TAB
@@ -20,17 +20,17 @@ layers:
   - Ctl+TAB
   - SPACE
   - ''
-  '2':
+  MID:
   - '2'
   - ESC
-  - {t: LEFT, type: held}
+  - LEFT
   - UP
-  - ENTER
+  - {t: ENTER, type: held}
   - DOWN
   - RIGHT
   - SPACE
   - ''
-  '3':
+  LOWER:
   - '3'
   - ESC
   - Gui+LEFT
@@ -40,7 +40,7 @@ layers:
   - Gui+RIGHT
   - {t: SPACE, type: held}
   - ''
-  '4':
+  TACT:
   - '&bootloader'
   - {t: BT, h: '1'}
   - BT CLR ALL
@@ -55,4 +55,4 @@ combos:
   k: '&bootloader'
   l: [default]
 - p: [7, 4]
-  k: '4'
+  k: TACT
