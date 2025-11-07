@@ -241,7 +241,7 @@
             bindings = <
 &kp C_MUTE            &lt_to_layer_0 1 ESC
 &mkp MB1    &mkp MB2  &lt_to_layer_0 2 ENTER
-&gesture    &mkp MB3  &lt_to_layer_0 3 SPACE
+&mouse_gesture    &mkp MB3  &lt_to_layer_0 3 SPACE
                       &lt_to_layer_0 4 ESC
             >;
 
