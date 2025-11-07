@@ -47,7 +47,6 @@
     scroller {
         layers = <2>;
         input-processors = <
-          &zip_xy_transform
           &zip_xy_to_scroll_mapper
           &zip_scroll_snap
         >;
@@ -137,7 +136,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             label = "GESTURE";
-            bindings = <&zip_mouse_gesture>;
+            bindings = <&macro_tap　&zip_mouse_gesture>;
         };
     };
 
