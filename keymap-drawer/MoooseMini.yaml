@@ -6,7 +6,7 @@ layers:
   - '&mkp MB1'
   - '&mkp MB2'
   - {t: '&to_layer_0 ENTER', h: MID}
-  - '&gesture'
+  - '&mouse_gesture'
   - '&mkp MB3'
   - {t: '&to_layer_0 SPACE', h: LOWER}
   - {t: '&to_layer_0 ESC', h: TACT}
