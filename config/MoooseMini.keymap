@@ -62,19 +62,19 @@
     stroke-size = <300>; // Optional (default: 500)
     enable-eager-mode; // Optional, but recommended
     left {
-        gesture = <GESTURE_LEFT>;
+        pattern = <GESTURE_LEFT>;
         bindings = <&kp LEFT>;
     };
     right {
-        gesture = <GESTURE_RIGHT>;
+        pattern = <GESTURE_RIGHT>;
         bindings = <&kp RIGHT>;
     };
     up {
-        gesture = <GESTURE_UP>;
+        pattern = <GESTURE_UP>;
         bindings = <&kp UP>;
     };
     down {
-        gesture = <GESTURE_DOWN>;
+        pattern = <GESTURE_DOWN>;
         bindings = <&kp DOWN>;
     };
 };
