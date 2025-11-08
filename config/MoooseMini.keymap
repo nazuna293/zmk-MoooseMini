@@ -138,7 +138,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             label = "GESTURE";
-            bindings = <&macro_tap>, <&mouse_gesture>;
+            bindings = <&mouse_gesture>;
         };
     };
 
