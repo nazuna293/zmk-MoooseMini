@@ -238,7 +238,7 @@
 
         UPPER {
             bindings = <
-&kp 1                         &kp none
+&kp 1                         &none
 &kp LC(LS(TAB))  &kp LC(T)    &kp ENTER
 &kp LC(W)        &kp LC(TAB)  &kp SPACE
                               &none
@@ -250,7 +250,7 @@
         MID {
             bindings = <
 &kp 2                &kp ESC
-&kp LEFT  &kp UP     &kp none
+&kp LEFT  &kp UP     &none
 &kp DOWN  &kp RIGHT  &kp SPACE
                      &none
             >;
@@ -262,7 +262,7 @@
             bindings = <
 &kp 3                        &kp ESC
 &kp LG(LEFT)  &kp LG(UP)     &kp ENTER
-&kp LG(DOWN)  &kp LG(RIGHT)  &kp none
+&kp LG(DOWN)  &kp LG(RIGHT)  &none
                              &none
             >;
 
