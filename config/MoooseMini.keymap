@@ -47,6 +47,7 @@
     scroller {
         layers = <2>;
         input-processors = <
+        &zip_xy_transform (INPUT_TRANSFORM_X_INVERT)
           &zip_xy_to_scroll_mapper
           &zip_scroll_snap
         >;
@@ -60,26 +61,21 @@
 &zip_mouse_gesture {
     stroke-size = <300>; // Optional (default: 500)
     enable-eager-mode; // Optional, but recommended
-    history_back {
-        pattern = <GESTURE_RIGHT>;
-        bindings = <&kp LA(LEFT)>;
+    left {
+        gesture = <GESTURE_LEFT>;
+        bindings = <&kp LEFT>;
     };
-
-    history_forward {
-        pattern = <GESTURE_LEFT>;
-        bindings = <&kp LA(RIGHT)>;
+    right {
+        gesture = <GESTURE_RIGHT>;
+        bindings = <&kp RIGHT>;
     };
-
-    close_tab {
-        pattern = <GESTURE_DOWN GESTURE_RIGHT>;
-        bindings = <&kp LC(W)>;
+    up {
+        gesture = <GESTURE_UP>;
+        bindings = <&kp UP>;
     };
-
-    new_tab {
-        pattern = <GESTURE_DOWN GESTURE_LEFT>;
-        bindings = <&kp LC(T)>;
-        wait-ms = <20>;  // Optional: wait time between behaviors (default: CONFIG_ZMK_MACRO_DEFAULT_WAIT_MS)
-        tap-ms = <40>;   // Optional: press duration for each behavior (default: CONFIG_ZMK_MACRO_DEFAULT_TAP_MS)
+    down {
+        gesture = <GESTURE_DOWN>;
+        bindings = <&kp DOWN>;
     };
 };
 
