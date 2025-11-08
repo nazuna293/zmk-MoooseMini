@@ -1,4 +1,4 @@
-　include:
+include:
   - board: seeeduino_xiao_ble
     shield: MoooseMini rgbled_adapter
     snippet: studio-rpc-usb-uart
