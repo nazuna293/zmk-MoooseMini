@@ -219,21 +219,6 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        boot {
-            bindings = <&bootloader>;
-            key-positions = <4 1 7>;
-            layers = <0>;
-        };
-
-        setting {
-            bindings = <&mo 4>;
-            key-positions = <7 4>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -242,7 +227,7 @@
 &kp C_MUTE            &lt_to_layer_0 1 ESC
 &mkp MB1    &mkp MB2  &lt_to_layer_0 2 ENTER
 &mouse_gesture    &mkp MB3  &lt_to_layer_0 3 SPACE
-                      &lt_to_layer_0 4 ESC
+                      &mo 4
             >;
 
             sensor-bindings = <&mouse_scroll SCRL_DOWN SCRL_UP>;
