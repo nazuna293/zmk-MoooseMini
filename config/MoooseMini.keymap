@@ -61,7 +61,7 @@
 // mouse-gesture
 
 &zip_mouse_gesture {
-    stroke-size = <200>; // Optional (default: 200)
+    stroke-size = <100>; // Optional (default: 200)
     // enable-eager-mode; // Optional, but recommended
 
     left {
