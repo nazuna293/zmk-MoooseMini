@@ -12,7 +12,7 @@ layers:
   - TACT
   UPPER:
   - '1'
-  - {t: none, type: held}
+  - {type: held}
   - Ctl+Sft+TAB
   - Ctl+T
   - ENTER
@@ -25,7 +25,7 @@ layers:
   - ESC
   - LEFT
   - UP
-  - {t: none, type: held}
+  - {type: held}
   - DOWN
   - RIGHT
   - SPACE
@@ -38,7 +38,7 @@ layers:
   - ENTER
   - Gui+DOWN
   - Gui+RIGHT
-  - {t: none, type: held}
+  - {type: held}
   - ''
   TACT:
   - '&bootloader'
