@@ -47,7 +47,7 @@
     scroller {
         layers = <2>;
         input-processors = <
-          &zip_xy_scaler 1 3
+          &zip_xy_scaler 1 5
           &zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)
           &zip_xy_to_scroll_mapper
           &zip_scroll_snap
@@ -62,21 +62,25 @@
 &zip_mouse_gesture {
     stroke-size = <300>; // Optional (default: 500)
     enable-eager-mode; // Optional, but recommended
+
     left {
         pattern = <GESTURE_LEFT>;
-        bindings = <&kp LEFT>;
+        bindings = <&kp LEFT_WIN>;
     };
+
     right {
         pattern = <GESTURE_RIGHT>;
-        bindings = <&kp RIGHT>;
+        bindings = <&kp RIGHT_ARROW>;
     };
+
     up {
         pattern = <GESTURE_UP>;
-        bindings = <&kp UP>;
+        bindings = <&kp UP_ARROW>;
     };
+
     down {
         pattern = <GESTURE_DOWN>;
-        bindings = <&kp DOWN>;
+        bindings = <&kp DOWN_ARROW>;
     };
 };
 
