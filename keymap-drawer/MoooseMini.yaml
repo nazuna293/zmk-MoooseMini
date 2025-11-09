@@ -2,15 +2,15 @@ layout: {zmk_keyboard: MoooseMini}
 layers:
   DEFAULT:
   - MUTE
-  - {t: '&to_layer_0 ESC', h: UPPER}
+  - {t: '&to_layer_0 ESC', h: Fn1}
   - '&mkp MB1'
   - '&mkp MB2'
-  - {t: '&to_layer_0 ENTER', h: MID}
+  - {t: '&to_layer_0 ENTER', h: Fn2}
   - '&mouse_gesture'
   - '&mkp MB3'
-  - {t: '&to_layer_0 SPACE', h: LOWER}
-  - TACT
-  UPPER:
+  - {t: '&to_layer_0 SPACE', h: Fn3}
+  - setting
+  Fn1:
   - '1'
   - {type: held}
   - Ctl+Sft+TAB
@@ -20,7 +20,7 @@ layers:
   - Ctl+TAB
   - SPACE
   - ''
-  MID:
+  Fn2:
   - '2'
   - ESC
   - LEFT
@@ -30,7 +30,7 @@ layers:
   - RIGHT
   - SPACE
   - ''
-  LOWER:
+  Fn3:
   - '3'
   - ESC
   - Gui+LEFT
@@ -40,7 +40,7 @@ layers:
   - Gui+RIGHT
   - {type: held}
   - ''
-  TACT:
+  setting:
   - '&bootloader'
   - {t: BT, h: '1'}
   - '&sys_reset'
@@ -50,3 +50,17 @@ layers:
   - {t: BT, h: '5'}
   - {t: BT, h: '3'}
   - {type: held}
+  toALT:
+  - {t: ▽, type: trans}
+  - {type: held}
+  - Sft+TAB
+  - TAB
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [4, 1]
+  k: toALT
+  l: [DEFAULT]

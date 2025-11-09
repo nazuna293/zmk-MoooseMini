@@ -1,4 +1,4 @@
-<svg width="340" height="1414" viewBox="0 0 340 1414" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="340" height="1686" viewBox="0 0 340 1686" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <style>/* inherit to force styles through use tags */
 svg path {
     fill: inherit;
@@ -136,8 +136,8 @@ path.combo {
 <text x="0" y="0" class="key tap">
 <tspan x="0" dy="-1.2em" style="font-size: 64%">&amp;to_layer_0</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">ESC</tspan>
 </text>
-<a href="#UPPER">
-<text x="0" y="24" class="key hold layer-activator">UPPER</text>
+<a href="#Fn1">
+<text x="0" y="24" class="key hold layer-activator">Fn1</text>
 </a></g>
 <g transform="translate(28, 84)" class="key keypos-2">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -156,8 +156,8 @@ path.combo {
 <text x="0" y="0" class="key tap">
 <tspan x="0" dy="-1.2em" style="font-size: 64%">&amp;to_layer_0</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">ENTER</tspan>
 </text>
-<a href="#MID">
-<text x="0" y="24" class="key hold layer-activator">MID</text>
+<a href="#Fn2">
+<text x="0" y="24" class="key hold layer-activator">Fn2</text>
 </a></g>
 <g transform="translate(28, 140)" class="key keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -174,18 +174,23 @@ path.combo {
 <text x="0" y="0" class="key tap">
 <tspan x="0" dy="-1.2em" style="font-size: 64%">&amp;to_layer_0</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">SPACE</tspan>
 </text>
-<a href="#LOWER">
-<text x="0" y="24" class="key hold layer-activator">LOWER</text>
+<a href="#Fn3">
+<text x="0" y="24" class="key hold layer-activator">Fn3</text>
 </a></g>
 <g transform="translate(168, 196)" class="key keypos-8">
 <rect rx="6" ry="6" x="-18" y="-18" width="35" height="35" class="key"/>
-<a href="#TACT">
-<text x="0" y="0" class="key tap layer-activator">TACT</text>
+<a href="#setting">
+<text x="0" y="0" class="key tap layer-activator">setting</text>
+</a></g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="224" y="43" width="28" height="26" class="combo"/>
+<a href="#toALT">
+<text x="238" y="56" class="combo tap layer-activator">toALT</text>
 </a></g>
 </g>
 </g>
-<g transform="translate(30, 272)" class="layer-UPPER">
-<text x="0" y="28" class="label" id="UPPER">UPPER:</text>
+<g transform="translate(30, 272)" class="layer-Fn1">
+<text x="0" y="28" class="label" id="Fn1">Fn1:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 28)" class="key keypos-0">
 <rect rx="6" ry="6" x="-18" y="-18" width="35" height="35" class="key"/>
@@ -225,8 +230,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 543)" class="layer-MID">
-<text x="0" y="28" class="label" id="MID">MID:</text>
+<g transform="translate(30, 543)" class="layer-Fn2">
+<text x="0" y="28" class="label" id="Fn2">Fn2:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 28)" class="key keypos-0">
 <rect rx="6" ry="6" x="-18" y="-18" width="35" height="35" class="key"/>
@@ -264,8 +269,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 815)" class="layer-LOWER">
-<text x="0" y="28" class="label" id="LOWER">LOWER:</text>
+<g transform="translate(30, 815)" class="layer-Fn3">
+<text x="0" y="28" class="label" id="Fn3">Fn3:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 28)" class="key keypos-0">
 <rect rx="6" ry="6" x="-18" y="-18" width="35" height="35" class="key"/>
@@ -309,8 +314,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1086)" class="layer-TACT">
-<text x="0" y="28" class="label" id="TACT">TACT:</text>
+<g transform="translate(30, 1086)" class="layer-setting">
+<text x="0" y="28" class="label" id="setting">setting:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 28)" class="key keypos-0">
 <rect rx="6" ry="6" x="-18" y="-18" width="35" height="35" class="key"/>
@@ -353,6 +358,45 @@ path.combo {
 </g>
 <g transform="translate(168, 196)" class="key held keypos-8">
 <rect rx="6" ry="6" x="-18" y="-18" width="35" height="35" class="key held"/>
+</g>
+</g>
+</g>
+<g transform="translate(30, 1358)" class="layer-toALT">
+<text x="0" y="28" class="label" id="toALT">toALT:</text>
+<g transform="translate(0, 56)">
+<g transform="translate(28, 28)" class="key trans keypos-0">
+<rect rx="6" ry="6" x="-18" y="-18" width="35" height="35" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
+</g>
+<g transform="translate(252, 28)" class="key held keypos-1">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
+</g>
+<g transform="translate(28, 84)" class="key keypos-2">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">Sft+TAB</text>
+</g>
+<g transform="translate(84, 84)" class="key keypos-3">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">TAB</text>
+</g>
+<g transform="translate(224, 84)" class="key held keypos-4">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
+</g>
+<g transform="translate(28, 140)" class="key trans keypos-5">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
+</g>
+<g transform="translate(84, 140)" class="key trans keypos-6">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
+</g>
+<g transform="translate(196, 140)" class="key trans keypos-7">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
+</g>
+<g transform="translate(168, 196)" class="key trans keypos-8">
+<rect rx="6" ry="6" x="-18" y="-18" width="35" height="35" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 </g>
 </g>
