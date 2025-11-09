@@ -219,6 +219,16 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        mo5 {
+            bindings = <&mo 5>;
+            key-positions = <4 1>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -233,7 +243,7 @@
             sensor-bindings = <&mouse_scroll SCRL_DOWN SCRL_UP>;
         };
 
-        UPPER {
+        Fn1 {
             bindings = <
 &kp 1                         &none
 &kp LC(LS(TAB))  &kp LC(T)    &kp ENTER
@@ -244,7 +254,7 @@
             sensor-bindings = <&inc_dec_kp LC(LS(TAB)) LC(TAB)>;
         };
 
-        MID {
+        Fn2 {
             bindings = <
 &kp 2                &kp ESC
 &kp LEFT  &kp UP     &none
@@ -255,7 +265,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
-        LOWER {
+        Fn3 {
             bindings = <
 &kp 3                        &kp ESC
 &kp LG(LEFT)  &kp LG(UP)     &kp ENTER
@@ -266,7 +276,7 @@
             sensor-bindings = <&mouse_scroll SCRL_LEFT SCRL_RIGHT>;
         };
 
-        TACT {
+        setting {
             bindings = <
 &bootloader                   &bt BT_SEL 1
 &sys_reset      &bt BT_SEL 4  &bt BT_SEL 2
@@ -275,6 +285,15 @@
             >;
 
             sensor-bindings = <&mouse_scroll SCRL_DOWN SCRL_UP>;
+        };
+
+        toALT {
+            bindings = <
+&trans                &trans
+&kp LS(TAB)  &kp TAB  &trans
+&trans       &trans   &trans
+                      &trans
+            >;
         };
     };
 };
