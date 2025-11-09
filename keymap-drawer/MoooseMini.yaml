@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: MoooseMini}
 layers:
-  default:
+  DEFAULT:
   - MUTE
   - {t: '&to_layer_0 ESC', h: UPPER}
   - '&mkp MB1'
@@ -43,10 +43,10 @@ layers:
   TACT:
   - '&bootloader'
   - {t: BT, h: '1'}
-  - BT CLR ALL
+  - '&sys_reset'
   - {t: BT, h: '4'}
   - {t: BT, h: '2'}
-  - BT CLR
+  - BT CLR ALL
   - {t: BT, h: '5'}
   - {t: BT, h: '3'}
   - {type: held}
