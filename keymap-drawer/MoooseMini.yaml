@@ -58,8 +58,8 @@ layers:
   - {type: held}
   - LEFT ARROW
   - RIGHT ARROW
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
 combos:
 - p: [4, 1]
   k: toALT
