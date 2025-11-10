@@ -245,9 +245,9 @@
 
         Fn1 {
             bindings = <
-&kp 1                         &none
-&kp LC(LS(TAB))  &kp LC(T)    &kp ENTER
-&kp LC(W)        &kp LC(TAB)  &kp SPACE
+&kp LC(W)                     &none
+&kp LC(LS(TAB))  &kp LC(TAB)  &kp ENTER
+&none            &none        &kp SPACE
                               &none
             >;
 
