@@ -11,13 +11,13 @@ layers:
   - {t: '&to_layer_0 SPACE', h: Fn3}
   - setting
   Fn1:
-  - '1'
+  - Ctl+W
   - {type: held}
   - Ctl+Sft+TAB
-  - Ctl+T
-  - ENTER
-  - Ctl+W
   - Ctl+TAB
+  - ENTER
+  - ''
+  - ''
   - SPACE
   - ''
   Fn2:
