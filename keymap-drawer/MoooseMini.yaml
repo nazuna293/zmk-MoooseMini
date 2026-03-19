@@ -16,8 +16,8 @@ layers:
   - Ctl+Sft+TAB
   - Ctl+TAB
   - ENTER
-  - ''
-  - ''
+  - Alt+UP
+  - Sft+Ctl+N
   - SPACE
   - ''
   Fn2:
