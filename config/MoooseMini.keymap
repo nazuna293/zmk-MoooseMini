@@ -253,10 +253,10 @@
 
         Fn1 {
             bindings = <
-&kp LC(W)                     &none
-&kp LC(LS(TAB))  &kp LC(TAB)  &kp ENTER
-&none            &none        &kp SPACE
-                              &none
+&kp LC(W)                       &none
+&kp LC(LS(TAB))  &kp LC(TAB)    &kp ENTER
+&kp LA(UP)       &kp LS(LC(N))  &kp SPACE
+                                &none
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LS(TAB)) LC(TAB)>;
