@@ -6,7 +6,7 @@ layers:
   - '&mkp MB1'
   - '&mkp MB2'
   - {t: '&to_layer_0 ENTER', h: Fn2}
-  - '&mouse_gesture'
+  - {t: '&double_click', h: '&gesture'}
   - '&mkp MB3'
   - {t: '&to_layer_0 SPACE', h: Fn3}
   - setting
