@@ -21,13 +21,13 @@ layers:
   - SPACE
   - ''
   Fn2:
-  - '2'
+  - F4
   - ESC
-  - LEFT
-  - UP
+  - Sft+TAB
+  - TAB
   - {type: held}
-  - DOWN
-  - RIGHT
+  - ''
+  - ''
   - SPACE
   - ''
   Fn3:
