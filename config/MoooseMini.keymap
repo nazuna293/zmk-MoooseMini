@@ -10,8 +10,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#undef ZMK_POINTING_DEFAULT_SCRL_VAL
-
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100  // スクロール量を10→100に変更
 
 &mt {
