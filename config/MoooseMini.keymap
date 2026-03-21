@@ -270,10 +270,10 @@
 
         Fn2 {
             bindings = <
-&kp F4                &kp ESC
-&kp LS(TAB)  &kp TAB  &none
-&none        &none    &kp SPACE
-                      &none
+&kp F4                  &kp ESC
+&kp LS(TAB)  &kp TAB    &none
+&kp LEFT     &kp RIGHT  &kp SPACE
+                        &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
