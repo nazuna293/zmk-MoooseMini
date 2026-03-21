@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: MoooseMini}
 layers:
   DEFAULT:
-  - MUTE
+  - F5
   - {t: '&to_layer_0 ESC', h: Fn1}
   - '&mkp MB1'
   - '&mkp MB2'
