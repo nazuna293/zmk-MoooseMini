@@ -26,8 +26,8 @@ layers:
   - Sft+TAB
   - TAB
   - {type: held}
-  - ''
-  - ''
+  - LEFT
+  - RIGHT
   - SPACE
   - ''
   Fn3:
