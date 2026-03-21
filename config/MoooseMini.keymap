@@ -248,7 +248,7 @@
 
         DEFAULT {
             bindings = <
-&kp C_MUTE                           &lt_to_layer_0 1 ESC
+&kp F5                               &lt_to_layer_0 1 ESC
 &mkp MB1                   &mkp MB2  &lt_to_layer_0 2 ENTER
 &double_click_gesture 0 0  &mkp MB3  &lt_to_layer_0 3 SPACE
                                      &mo 4
