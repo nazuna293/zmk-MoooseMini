@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 100  // スクロール量を10→100に変更
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 50
 
 &mt {
     flavor = "balanced";
@@ -79,7 +79,7 @@
         compatible = "zmk,layer-listeners";
 
         release_alt {
-            layers = <2>;
+            layers = <3>;
             bindings = <&kt_on LEFT_ALT &kt_off LEFT_ALT>;
         };
     };
@@ -218,7 +218,7 @@
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
             tap-ms = <20>;
         };
@@ -270,9 +270,9 @@
 
         Fn2 {
             bindings = <
-&kp F4                  &kp ESC
-&kp LS(TAB)  &kp TAB    &none
-&kp LEFT     &kp RIGHT  &kp SPACE
+&kp 3                  &kp ESC
+&kp LG(LEFT)  &kp LG(UP)    &none
+&kp LG(DOWN)  &kp LG(RIGHT)  &kp SPACE
                         &none
             >;
 
@@ -281,9 +281,9 @@
 
         Fn3 {
             bindings = <
-&kp 3                        &kp ESC
-&kp LG(LEFT)  &kp LG(UP)     &kp ENTER
-&kp LG(DOWN)  &kp LG(RIGHT)  &none
+&kp F4                        &kp ESC
+&kp LS(TAB)  &kp TAB       &kp ENTER
+&kp LEFT     &kp RIGHT  &none
                              &none
             >;
 
