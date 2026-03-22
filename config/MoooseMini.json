@@ -17,9 +17,9 @@
   },
   "sensors": [
     {
-      "ref": "right_encoder",
-      "name": "encoder_right",
-      "identifier": "encoder_right",
+      "ref": "encoder_0",
+      "name": "RotaryEncoder",
+      "identifier": "encoder_0",
       "enabled": false
     }
   ]
