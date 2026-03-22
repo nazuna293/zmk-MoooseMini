@@ -20,7 +20,7 @@
       "ref": "encoder_0",
       "name": "RotaryEncoder",
       "identifier": "encoder_0",
-      "enabled": false
+      "enabled": true
     }
   ]
 }
