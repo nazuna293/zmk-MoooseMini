@@ -21,23 +21,23 @@ layers:
   - SPACE
   - ''
   Fn2:
-  - F4
-  - ESC
-  - Sft+TAB
-  - TAB
-  - {type: held}
-  - LEFT
-  - RIGHT
-  - SPACE
-  - ''
-  Fn3:
   - '3'
   - ESC
   - Gui+LEFT
   - Gui+UP
-  - ENTER
+  - {type: held}
   - Gui+DOWN
   - Gui+RIGHT
+  - SPACE
+  - ''
+  Fn3:
+  - F4
+  - ESC
+  - Sft+TAB
+  - TAB
+  - ENTER
+  - LEFT
+  - RIGHT
   - {type: held}
   - ''
   setting:
