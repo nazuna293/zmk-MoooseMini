@@ -20,6 +20,7 @@
       "ref": "encoder_0",
       "name": "RotaryEncoder",
       "identifier": "encoder_0",
+      "compatible": "alps,ec11",
       "enabled": true
     }
   ]
