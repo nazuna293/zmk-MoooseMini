@@ -20,15 +20,15 @@ layers:
   - Sft+Ctl+N
   - SPACE
   - ''
-  Fn2: ['3', ESC, Gui+LEFT, Gui+UP, '', Gui+DOWN, Gui+RIGHT, SPACE, '']
+  Fn2: [F4, ESC, Sft+TAB, TAB, '', LEFT, RIGHT, SPACE, '']
   Fn3:
-  - F4
+  - 3p
   - ESC
-  - Sft+TAB
-  - TAB
+  - Gui+LEFT
+  - Gui+UP
   - ENTER
-  - LEFT
-  - RIGHT
+  - Gui+DOWN
+  - Gui+RIGHT
   - {type: held}
   - ''
   setting:
