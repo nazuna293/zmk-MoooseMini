@@ -282,7 +282,7 @@
 
         Fn3 {
             bindings = <
-&kp 3p                  &kp ESC
+&kp 3                  &kp ESC
 &kp LG(LEFT)  &kp LG(UP)    &kp ENTER
 &kp LG(DOWN)  &kp LG(RIGHT)  &none
                         &none
