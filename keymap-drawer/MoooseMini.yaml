@@ -22,7 +22,7 @@ layers:
   - ''
   Fn2: [F4, ESC, Sft+TAB, TAB, '', LEFT, RIGHT, SPACE, '']
   Fn3:
-  - 3p
+  - '3'
   - ESC
   - Gui+LEFT
   - Gui+UP
