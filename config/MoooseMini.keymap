@@ -271,9 +271,9 @@
 
         Fn2 {
             bindings = <
-&kp 3                        &kp ESC
-&kp LG(LEFT)  &kp LG(UP)     &none
-&kp LG(DOWN)  &kp LG(RIGHT)  &kp SPACE
+&kp F4                        &kp ESC
+&kp LS(TAB)  &kp TAB     &none
+&kp LEFT     &kp RIGHT  &kp SPACE
                              &none
             >;
 
@@ -282,9 +282,9 @@
 
         Fn3 {
             bindings = <
-&kp F4                  &kp ESC
-&kp LS(TAB)  &kp TAB    &kp ENTER
-&kp LEFT     &kp RIGHT  &none
+&kp 3p                  &kp ESC
+&kp LG(LEFT)  &kp LG(UP)    &kp ENTER
+&kp LG(DOWN)  &kp LG(RIGHT)  &none
                         &none
             >;
 
