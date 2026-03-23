@@ -2,13 +2,13 @@ layout: {zmk_keyboard: MoooseMini}
 layers:
   DEFAULT:
   - F5
-  - {t: '&to_layer_0 ESC', h: Fn1}
+  - {t: ESC, h: Fn1}
   - '&mkp MB1'
   - '&mkp MB2'
-  - {t: '&to_layer_0 ENTER', h: Fn2}
+  - {t: ENTER, h: '&mo_to_0 2'}
   - {t: '&double_click', h: '&gesture'}
   - '&mkp MB3'
-  - {t: '&to_layer_0 SPACE', h: Fn3}
+  - {t: SPACE, h: Fn3}
   - setting
   Fn1:
   - Ctl+W
@@ -20,16 +20,7 @@ layers:
   - Sft+Ctl+N
   - SPACE
   - ''
-  Fn2:
-  - '3'
-  - ESC
-  - Gui+LEFT
-  - Gui+UP
-  - {type: held}
-  - Gui+DOWN
-  - Gui+RIGHT
-  - SPACE
-  - ''
+  Fn2: ['3', ESC, Gui+LEFT, Gui+UP, '', Gui+DOWN, Gui+RIGHT, SPACE, '']
   Fn3:
   - F4
   - ESC
@@ -51,13 +42,13 @@ layers:
   - {t: BT, h: '3'}
   - {type: held}
   toALT:
-  - F4
+  - '&to_kp 2 F4'
   - {type: held}
-  - Sft+TAB
-  - TAB
+  - '&to_kp 2 LS(TAB)'
+  - '&to_kp 2 TAB'
   - {type: held}
-  - LEFT ARROW
-  - RIGHT ARROW
+  - '&to_kp 2 LEFT_ARROW'
+  - '&to_kp 2 RIGHT_ARROW'
   - ''
   - ''
 combos:
