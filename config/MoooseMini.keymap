@@ -181,9 +181,10 @@
             bindings = <&mo_to_0>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             quick-tap-ms = <200>;
             flavor = "balanced";
+            hold-while-undecided;
         };
 
         lt_to_layer_0: lt_to_layer_0 {
@@ -248,9 +249,9 @@
 
         DEFAULT {
             bindings = <
-&kp F5                               &lt_to_layer_0 1 ESC
-&mkp MB1                   &mkp MB2  &lt_to_layer_0 2 ENTER
-&double_click_gesture 0 0  &mkp MB3  &lt_to_layer_0 3 SPACE
+&kp F5                               &lt 1 ESC
+&mkp MB1                   &mkp MB2  &lt_to_0 2 ENTER
+&double_click_gesture 0 0  &mkp MB3  &lt 3 SPACE
                                      &mo 4
             >;
 
@@ -270,10 +271,10 @@
 
         Fn2 {
             bindings = <
-&kp 3                  &kp ESC
-&kp LG(LEFT)  &kp LG(UP)    &none
+&kp 3                        &kp ESC
+&kp LG(LEFT)  &kp LG(UP)     &none
 &kp LG(DOWN)  &kp LG(RIGHT)  &kp SPACE
-                        &none
+                             &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -281,10 +282,10 @@
 
         Fn3 {
             bindings = <
-&kp F4                        &kp ESC
-&kp LS(TAB)  &kp TAB       &kp ENTER
+&kp F4                  &kp ESC
+&kp LS(TAB)  &kp TAB    &kp ENTER
 &kp LEFT     &kp RIGHT  &none
-                             &none
+                        &none
             >;
 
             sensor-bindings = <&mouse_scroll SCRL_LEFT SCRL_RIGHT>;
@@ -303,10 +304,10 @@
 
         toALT {
             bindings = <
-&kp F4                           &none
-&kp LS(TAB)     &kp TAB          &none
-&kp LEFT_ARROW  &kp RIGHT_ARROW  &none
-                                 &none
+&to_kp 2 F4                                &none
+&to_kp 2 LS(TAB)     &to_kp 2 TAB          &none
+&to_kp 2 LEFT_ARROW  &to_kp 2 RIGHT_ARROW  &none
+                                           &none
             >;
         };
     };
