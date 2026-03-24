@@ -79,19 +79,12 @@
         compatible = "zmk,layer-listeners";
 
         release_alt {
-            layers = <3>;
+            layers = <2>;
             bindings = <&kt_on LEFT_ALT &kt_off LEFT_ALT>;
         };
     };
 
     macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
-        };
-
         // zmk-listeners
 
         to_kp: to_kp {
@@ -185,15 +178,6 @@
             quick-tap-ms = <200>;
             flavor = "balanced";
             hold-while-undecided;
-        };
-
-        lt_to_layer_0: lt_to_layer_0 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
         };
 
         rot_kp: sensor_rotate_kp {
