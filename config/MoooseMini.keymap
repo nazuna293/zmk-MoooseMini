@@ -205,7 +205,7 @@
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
-            tap-ms = <20>;
+            tap-ms = <50>;
         };
 
         double_click_gesture: double_click_gesture {
