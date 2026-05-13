@@ -244,10 +244,10 @@
 
         Fn1 {
             bindings = <
-&kp LC(W)                       &none
-&kp LC(LS(TAB))  &kp LC(TAB)    &kp ENTER
-&kp LA(UP)       &kp LS(LC(N))  &kp SPACE
-                                &none
+&kp LC(W)                     &none
+&kp LC(LS(TAB))  &kp LC(TAB)  &kp ENTER
+&kp LA(LEFT)     &kp LA(UP)   &kp SPACE
+                              &none
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LS(TAB)) LC(TAB)>;
@@ -255,10 +255,10 @@
 
         Fn2 {
             bindings = <
-&kp F4                        &kp ESC
-&kp LS(TAB)  &kp TAB     &none
+&kp F4                  &kp ESC
+&kp LS(TAB)  &kp TAB    &none
 &kp LEFT     &kp RIGHT  &kp SPACE
-                             &none
+                        &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -266,10 +266,10 @@
 
         Fn3 {
             bindings = <
-&kp 3                  &kp ESC
-&kp LG(LEFT)  &kp LG(UP)    &kp ENTER
+&kp 3                        &kp ESC
+&kp LG(LEFT)  &kp LG(UP)     &kp ENTER
 &kp LG(DOWN)  &kp LG(RIGHT)  &none
-                        &none
+                             &none
             >;
 
             sensor-bindings = <&mouse_scroll SCRL_LEFT SCRL_RIGHT>;
