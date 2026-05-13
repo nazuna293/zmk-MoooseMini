@@ -5,7 +5,7 @@ layers:
   - {t: ESC, h: Fn1}
   - '&mkp MB1'
   - '&mkp MB2'
-  - {t: ENTER, h: '&mo_to_0 2'}
+  - '&td1'
   - {t: '&double_click', h: '&gesture'}
   - '&mkp MB3'
   - {t: SPACE, h: Fn3}
@@ -20,7 +20,16 @@ layers:
   - UP
   - SPACE
   - ''
-  Fn2: [F4, ESC, Sft+TAB, TAB, '', LEFT, UP, SPACE, '']
+  '6':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   Fn3:
   - '3'
   - ESC
@@ -41,14 +50,15 @@ layers:
   - {t: BT, h: '5'}
   - {t: BT, h: '3'}
   - {type: held}
+  Fn2: [F4, ESC, Sft+TAB, TAB, '', LEFT, UP, SPACE, '']
   toALT:
-  - '&to_kp 2 F4'
+  - '&to_kp 6 F4'
   - {type: held}
-  - '&to_kp 2 LS(TAB)'
-  - '&to_kp 2 TAB'
+  - '&to_kp 6 LS(TAB)'
+  - '&to_kp 6 TAB'
   - {type: held}
-  - '&to_kp 2 LEFT_ARROW'
-  - '&to_kp 2 RIGHT_ARROW'
+  - '&to_kp 6 LEFT_ARROW'
+  - '&to_kp 6 RIGHT_ARROW'
   - ''
   - ''
 combos:
