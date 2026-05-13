@@ -250,7 +250,7 @@
                               &none
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(LS(TAB)) LC(TAB)>;
+            sensor-bindings = <&inc_dec_kp LC(PG_DN) LC(PG_UP)>;
         };
 
         Fn2 {
@@ -261,7 +261,7 @@
                       &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp LC(K_SCROLL_UP) LC(K_SCROLL_DOWN)>;
         };
 
         Fn3 {
