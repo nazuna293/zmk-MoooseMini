@@ -182,9 +182,9 @@
 
         td1: td1 {
             compatible = "zmk,behavior-tap-dance";
-            label = "f2_alt_f4";
+            label = "_alt_f4";
             #binding-cells = <0>;
-            bindings = <&lt_to_0 5 ENTER>, <&mo 2>;
+            bindings = <&mo 2>, <&lt_to_0 5 ENTER>;
         };
 
         rot_kp: sensor_rotate_kp {
