@@ -222,7 +222,7 @@
         compatible = "zmk,combos";
 
         mo5 {
-            bindings = <&mo 6>;
+            bindings = <&mo 5>;
             key-positions = <4 1>;
             layers = <0>;
         };
@@ -233,22 +233,13 @@
 
         DEFAULT {
             bindings = <
-&kp F5                               &lt 2 ESC
-&mkp MB1                   &mkp MB2  &lt_to_0 3 ENTER
-&double_click_gesture 0 0  &mkp MB3  &lt 4 SPACE
-                                     &mo 5
+&kp F5                               &lt 1 ESC
+&mkp MB1                   &mkp MB2  &lt_to_0 2 ENTER
+&double_click_gesture 0 0  &mkp MB3  &lt 3 SPACE
+                                     &mo 4
             >;
 
             sensor-bindings = <&scroll_up_down>;
-        };
-
-        layer_6 {
-            bindings = <
-&trans          &trans
-&trans  &trans  &trans
-&trans  &trans  &trans
-                &trans
-            >;
         };
 
         Fn1 {
@@ -297,9 +288,9 @@
 
         toALT {
             bindings = <
-&to_kp 3 F4                                &none
-&to_kp 3 LS(TAB)     &to_kp 3 TAB          &none
-&to_kp 3 LEFT_ARROW  &to_kp 3 RIGHT_ARROW  &none
+&to_kp 2 F4                                &none
+&to_kp 2 LS(TAB)     &to_kp 2 TAB          &none
+&to_kp 2 LEFT_ARROW  &to_kp 2 RIGHT_ARROW  &none
                                            &none
             >;
         };
