@@ -184,7 +184,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "enter_mo2_toALT";
             #binding-cells = <0>;
-            bindings = <&lt 6 ENTER>, <&lt_to_0 6 ENTER>;
+            bindings = <&lt 2 ENTER>, <&lt_to_0 6 ENTER>;
         };
 
         rot_kp: sensor_rotate_kp {
