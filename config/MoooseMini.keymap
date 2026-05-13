@@ -241,7 +241,7 @@
         DEFAULT {
             bindings = <
 &kp F5                               &lt 1 ESC
-&mkp MB1                   &mkp MB2  &lt_to_0 6 ENTER
+&mkp MB1                   &mkp MB2  &td1
 &double_click_gesture 0 0  &mkp MB3  &lt 3 SPACE
                                      &mo 4
             >;
