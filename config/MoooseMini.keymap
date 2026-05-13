@@ -239,7 +239,7 @@
                                      &mo 4
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp LC(LS(TAB)) LC(TAB)>;
         };
 
         Fn1 {
