@@ -180,6 +180,13 @@
             hold-while-undecided;
         };
 
+        td1: td1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "f2_alt_f4";
+            #binding-cells = <0>;
+            bindings = <&lt_to_0 5 F2>, <&kp F4>;
+        };
+
         rot_kp: sensor_rotate_kp {
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
