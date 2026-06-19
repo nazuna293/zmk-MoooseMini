@@ -5,7 +5,7 @@ layers:
   - {t: ESC, h: Fn1}
   - '&mkp MB1'
   - '&mkp MB2'
-  - '&td1'
+  - {t: ENTER, h: '6'}
   - {t: '&double_click', h: '&gesture'}
   - '&mkp MB3'
   - {t: SPACE, h: Fn3}
@@ -25,7 +25,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
