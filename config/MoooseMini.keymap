@@ -180,13 +180,6 @@
             hold-while-undecided;
         };
 
-        td1: td1 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "enter_mo2_toALT";
-            #binding-cells = <0>;
-            bindings = <&lt 6 ENTER>, <&lt_to_0 7 ENTER>;
-        };
-
         rot_kp: sensor_rotate_kp {
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
@@ -227,12 +220,6 @@
 
     combos {
         compatible = "zmk,combos";
-
-        mo5 {
-            bindings = <&mo 7>;
-            key-positions = <4 1>;
-            layers = <0>;
-        };
     };
 
     keymap {
@@ -241,7 +228,7 @@
         DEFAULT {
             bindings = <
 &kp F5                               &lt 1 LC(V)
-&mkp MB1                   &mkp MB2  &lt 6 ENTER
+&mkp MB1                   &mkp MB2  &lt 2 ENTER
 &double_click_gesture 0 0  &mkp MB3  &lt 3 SPACE
                                      &mo 4
             >;
@@ -289,24 +276,13 @@
 &bt BT_CLR_ALL  &bt BT_SEL 5  &bt BT_SEL 3
                               &none
             >;
-
-            sensor-bindings = <&mouse_scroll SCRL_DOWN SCRL_UP>;
-        };
-
-        layer_6 {
-            bindings = <
-&trans          &trans
-&trans  &trans  &trans
-&trans  &trans  &trans
-                &trans
-            >;
         };
 
         toALT {
             bindings = <
-&to_kp 7 F4                                &none
-&to_kp 7 LS(TAB)     &to_kp 7 TAB          &none
-&to_kp 7 LEFT_ARROW  &to_kp 7 RIGHT_ARROW  &none
+&to_kp 2 F4                                &none
+&to_kp 2 LS(TAB)     &to_kp 2 TAB          &none
+&to_kp 2 LEFT_ARROW  &to_kp 2 RIGHT_ARROW  &none
                                            &none
             >;
         };
