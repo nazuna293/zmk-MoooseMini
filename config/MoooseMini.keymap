@@ -184,7 +184,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "enter_mo2_toALT";
             #binding-cells = <0>;
-            bindings = <&lt 2 ENTER>, <&lt_to_0 6 ENTER>;
+            bindings = <&lt 6 ENTER>, <&lt_to_0 7 ENTER>;
         };
 
         rot_kp: sensor_rotate_kp {
@@ -229,7 +229,7 @@
         compatible = "zmk,combos";
 
         mo5 {
-            bindings = <&mo 6>;
+            bindings = <&mo 7>;
             key-positions = <4 1>;
             layers = <0>;
         };
@@ -240,8 +240,8 @@
 
         DEFAULT {
             bindings = <
-&kp F5                               &lt 1 ESC
-&mkp MB1                   &mkp MB2  &lt 2 ENTER
+&kp F5                               &lt 1 LC(V)
+&mkp MB1                   &mkp MB2  &lt 6 ENTER
 &double_click_gesture 0 0  &mkp MB3  &lt 3 SPACE
                                      &mo 4
             >;
@@ -251,28 +251,30 @@
 
         Fn1 {
             bindings = <
-&kp LC(W)                     &none
-&kp LC(LS(TAB))  &kp LC(TAB)  &kp ENTER
-&kp DOWN         &kp UP       &kp SPACE
-                              &none
+&kp F2                &none
+&kp LC(C)  &kp LC(X)  &none
+&kp LC(A)  &kp LC(Z)  &none
+                      &none
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PG_DN) LC(PG_UP)>;
+            sensor-bindings = <&inc_dec_kp LC(KP_MINUS) LC(KP_PLUS)>;
         };
 
-        layer_6 {
+        Fn2 {
             bindings = <
-&trans          &trans
-&trans  &trans  &trans
-&trans  &trans  &trans
-                &trans
+&kp F4                &none
+&kp LS(TAB)  &kp TAB  &none
+&kp LEFT     &kp UP   &none
+                      &none
             >;
+
+            sensor-bindings = <&inc_dec_kp LC(K_SCROLL_UP) LC(K_SCROLL_DOWN)>;
         };
 
         Fn3 {
             bindings = <
-&kp 3                        &kp ESC
-&kp LG(LEFT)  &kp LG(UP)     &kp ENTER
+&kp 3                        &none
+&kp LG(LEFT)  &kp LG(UP)     &none
 &kp LG(DOWN)  &kp LG(RIGHT)  &none
                              &none
             >;
@@ -291,22 +293,20 @@
             sensor-bindings = <&mouse_scroll SCRL_DOWN SCRL_UP>;
         };
 
-        Fn2 {
+        layer_6 {
             bindings = <
-&kp F4                &kp ESC
-&kp LS(TAB)  &kp TAB  &none
-&kp LEFT     &kp UP   &kp SPACE
-                      &none
+&trans          &trans
+&trans  &trans  &trans
+&trans  &trans  &trans
+                &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp LC(K_SCROLL_UP) LC(K_SCROLL_DOWN)>;
         };
 
         toALT {
             bindings = <
-&to_kp 6 F4                                &none
-&to_kp 6 LS(TAB)     &to_kp 6 TAB          &none
-&to_kp 6 LEFT_ARROW  &to_kp 6 RIGHT_ARROW  &none
+&to_kp 7 F4                                &none
+&to_kp 7 LS(TAB)     &to_kp 7 TAB          &none
+&to_kp 7 LEFT_ARROW  &to_kp 7 RIGHT_ARROW  &none
                                            &none
             >;
         };
