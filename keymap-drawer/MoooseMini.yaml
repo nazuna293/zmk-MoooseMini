@@ -2,40 +2,40 @@ layout: {zmk_keyboard: MoooseMini}
 layers:
   DEFAULT:
   - F5
-  - {t: ESC, h: Fn1}
+  - {t: Ctl+V, h: Fn1}
   - '&mkp MB1'
   - '&mkp MB2'
-  - {t: ENTER, h: '6'}
+  - {t: ENTER, h: Fn2}
   - {t: '&double_click', h: '&gesture'}
   - '&mkp MB3'
   - {t: SPACE, h: Fn3}
   - setting
   Fn1:
-  - Ctl+W
+  - F2
   - {type: held}
-  - Ctl+Sft+TAB
-  - Ctl+TAB
-  - ENTER
-  - DOWN
-  - UP
-  - SPACE
+  - Ctl+C
+  - Ctl+X
   - ''
-  '6':
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+A
+  - Ctl+Z
+  - ''
+  - ''
+  Fn2:
+  - F4
+  - ''
+  - Sft+TAB
+  - TAB
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LEFT
+  - UP
+  - ''
+  - ''
   Fn3:
   - '3'
-  - ESC
+  - ''
   - Gui+LEFT
   - Gui+UP
-  - ENTER
+  - ''
   - Gui+DOWN
   - Gui+RIGHT
   - {type: held}
@@ -50,18 +50,4 @@ layers:
   - {t: BT, h: '5'}
   - {t: BT, h: '3'}
   - {type: held}
-  Fn2: [F4, ESC, Sft+TAB, TAB, '', LEFT, UP, SPACE, '']
-  toALT:
-  - '&to_kp 6 F4'
-  - {type: held}
-  - '&to_kp 6 LS(TAB)'
-  - '&to_kp 6 TAB'
-  - {type: held}
-  - '&to_kp 6 LEFT_ARROW'
-  - '&to_kp 6 RIGHT_ARROW'
-  - ''
-  - ''
-combos:
-- p: [4, 1]
-  k: toALT
-  l: [DEFAULT]
+  toALT: ['&to_kp 2 F4', '', '&to_kp 2 LS(TAB)', '&to_kp 2 TAB', '', '&to_kp 2 LEFT_ARROW', '&to_kp 2 RIGHT_ARROW', '', '']
