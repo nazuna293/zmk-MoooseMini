@@ -21,13 +21,13 @@ layers:
   - ''
   - ''
   Fn2:
-  - F4
   - ''
-  - Sft+TAB
-  - TAB
+  - ''
+  - Gui+E
+  - DELETE
   - {type: held}
-  - LEFT
-  - UP
+  - F11
+  - ''
   - ''
   - ''
   Fn3:
