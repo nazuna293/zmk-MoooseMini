@@ -198,9 +198,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -229,13 +227,13 @@
 
         Fn2 {
             bindings = <
-&kp F4                &none
-&kp LS(TAB)  &kp TAB  &none
-&kp LEFT     &kp UP   &none
-                      &none
+&none                  &none
+&kp LG(E)  &kp DELETE  &none
+&kp F11    &none       &none
+                       &none
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(K_SCROLL_UP) LC(K_SCROLL_DOWN)>;
+            sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
         };
 
         Fn3 {
