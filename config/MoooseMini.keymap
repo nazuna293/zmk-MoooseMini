@@ -49,29 +49,49 @@
 // mouse-gesture
 
 &zip_mouse_gesture {
-    stroke-size = <100>; // Optional (default: 200)
-    enable-eager-mode; // Optional, but recommended
-    left {
+    stroke-size = <100>;
+    enable-eager-mode;
+
+    history_back {
         pattern = <GESTURE_LEFT>;
-        bindings = <&kp LEFT_ARROW>;
+        bindings = <&kp LA(LEFT)>;
     };
 
-    right {
+    history_forward {
         pattern = <GESTURE_RIGHT>;
-        bindings = <&kp RIGHT_ARROW>;
+        bindings = <&kp LA(RIGHT)>;
     };
 
-    up {
+    folder_up {
         pattern = <GESTURE_UP>;
-        bindings = <&kp UP_ARROW>;
+        bindings = <&kp LA(UP)>;
     };
 
-    down {
+    screenshot {
         pattern = <GESTURE_DOWN>;
-        bindings = <&kp DOWN_ARROW>;
+        bindings = <&kp LG(LS(S))>;
+    };
+
+    close_window {
+        pattern = <GESTURE_RIGHT GESTURE_UP>;
+        bindings = <&kp LA(F4)>;
+    };
+
+    close_tab {
+        pattern = <GESTURE_LEFT GESTURE_UP>;
+        bindings = <&kp LC(W)>;
+    };
+
+    show_desktop {
+        pattern = <GESTURE_RIGHT GESTURE_DOWN>;
+        bindings = <&kp LG(D)>;
+    };
+
+    minimize {
+        pattern = <GESTURE_LEFT GESTURE_DOWN>;
+        bindings = <&kp LG(DOWN)>;
     };
 };
-
 / {
     // zmk-listeners
 
