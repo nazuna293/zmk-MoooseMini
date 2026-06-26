@@ -7,7 +7,6 @@
 - ブランチやタグを削除しない
 - git reset --hard をしない
 - .github/ ディレクトリ内のワークフローファイルを変更しない
-- このリポジトリはフォークである。gh pr create 等のコマンドには必ず `--repo nazuna293/zmk-MoooseMini` を指定し、フォーク元（ataruno）にPRを作成しない
 
 ## ビルド
 
