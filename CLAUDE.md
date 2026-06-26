@@ -16,3 +16,16 @@
 - ビルド成果物（.uf2）は `gh run download` で取得する
 - 編集対象は config/MoooseMini.keymap と config/MoooseMini.conf
 - boards/shields/ 以下のデバイス定義は変更しない
+
+## 使用モジュール
+
+config/west.yml で管理。各モジュールのREADMEに従って設定すること。
+
+| モジュール | 作者 | 用途 | revision |
+|-----------|------|------|----------|
+| zmk-pmw3610-driver | badjeff | トラックボールセンサー(PMW3610)ドライバー | zmk-0.3 |
+| zmk-layout-shift | kot149 | JISレイアウト対応（`&kp`をlayout-shift版に上書き） | v1 |
+| zmk-scroll-snap | kot149 | スクロール方向を軸にスナップ | v1 |
+| zmk-mouse-gesture | kot149 | マウスストロークをキー入力に変換 | v1 |
+| zmk-listeners | ssbb | レイヤー/キーコードイベントでアクション実行 | v1 |
+| zmk-rgbled-widget | caksoylar | RGB LEDでバッテリー/BT状態表示 | v0.3 |
