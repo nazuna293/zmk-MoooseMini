@@ -207,7 +207,7 @@
             bindings = <
 &kp F5                               &lt 1 LC(V)
 &mkp MB1                   &mkp MB2  &lt 2 ENTER
-&double_click_gesture 0 0  &mkp MB3  &lt 3 SPACE
+&mouse_gesture  &mkp MB3  &lt 3 SPACE
                                      &mo 4
             >;
 
