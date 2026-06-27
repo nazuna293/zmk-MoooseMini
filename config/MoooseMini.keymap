@@ -50,7 +50,6 @@
 
 &zip_mouse_gesture {
     stroke-size = <100>;
-    enable-eager-mode;
 
     history_back {
         pattern = <GESTURE_LEFT>;
