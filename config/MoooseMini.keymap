@@ -50,6 +50,7 @@
 
 &zip_mouse_gesture {
     stroke-size = <100>;
+    enable-eager-mode;
 
     history_back {
         pattern = <GESTURE_LEFT>;
@@ -69,26 +70,6 @@
     screenshot {
         pattern = <GESTURE_DOWN>;
         bindings = <&kp LG(LS(S))>;
-    };
-
-    close_window {
-        pattern = <GESTURE_RIGHT GESTURE_UP>;
-        bindings = <&kp LA(F4)>;
-    };
-
-    close_tab {
-        pattern = <GESTURE_LEFT GESTURE_UP>;
-        bindings = <&kp LC(W)>;
-    };
-
-    show_desktop {
-        pattern = <GESTURE_RIGHT GESTURE_DOWN>;
-        bindings = <&kp LG(D)>;
-    };
-
-    minimize {
-        pattern = <GESTURE_LEFT GESTURE_DOWN>;
-        bindings = <&kp LG(DOWN)>;
     };
 };
 / {
