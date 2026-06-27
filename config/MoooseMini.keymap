@@ -52,24 +52,24 @@
     stroke-size = <100>;
     enable-eager-mode;
 
-    history_back {
+    left {
         pattern = <GESTURE_LEFT>;
-        bindings = <&kp LA(LEFT)>;
+        bindings = <&kp LEFT_ARROW>;
     };
 
-    history_forward {
+    right {
         pattern = <GESTURE_RIGHT>;
-        bindings = <&kp LA(RIGHT)>;
+        bindings = <&kp RIGHT_ARROW>;
     };
 
-    folder_up {
+    up {
         pattern = <GESTURE_UP>;
-        bindings = <&kp LA(UP)>;
+        bindings = <&kp UP_ARROW>;
     };
 
-    screenshot {
+    down {
         pattern = <GESTURE_DOWN>;
-        bindings = <&kp LG(LS(S))>;
+        bindings = <&kp DOWN_ARROW>;
     };
 };
 / {
